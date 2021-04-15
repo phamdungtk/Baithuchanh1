@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8"> 
+    <title>Website khoa CNTT</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 980px;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        #menu ul {
+            background-color: black;
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu>ul>li {
+            display: inline-block;
+            font-size: 11px;
+            line-height: 40px;
+            width: 113px;
+            position: relative;
+            text-align: center;
+        }
+
+        #menu ul li:hover {
+            background-color: red;
+        }
+
+        #tieude {
+            height: 140px;
+            width: 100%;
+        }
+
+        #name {
+            height: 100px;
+            line-height: 1cm;
+        }
+
+        #name a {
+            text-decoration: none;
+            color: black;
+            font-size: 11pt
+        }
+
+        #name span {
+            font-size: 21pt;
+            color: dodgerblue;
+        }
+
+        #menu {
+            background-color: beige;
+            height: 40px;
+            width: 100%;
+        }
+
+        #slideshow {
+            height: 275px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #slideshow img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #left_inner {
+            width: 69.5%;
+            float: left;
+            height: auto;
+        }
+
+        #title {
+            height: 35px;
+            width: 35%;
+            float: left;
+            margin-top: 15px;
+        }
+
+        #right_inner #title {
+            height: 35px;
+            width: 95%;
+            float: left;
+            margin-top: 15px;
+            margin-left: 5%;
+        }
+
+        #title a {
+            line-height: 0.9cm;
+            color: white;
+            text-decoration: none;
+        }
+
+        #left_inner hr {
+            float: left;
+            width: 99.4%;
+            border: 2px solid red;
+            margin-top: 2px;
+        }
+
+        #news_left {
+            width: 42%;
+            float: left;
+            height: auto;
+            text-align: justify;
+        }
+
+        #news_left img {
+            margin-top: 5px;
+            width: 100%;
+            margin-bottom: 5px;
+            height: 180px;
+        }
+
+        #news_left a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        #news_left a:hover {
+            color: blue;
+        }
+
+        #news_left p {
+            font-size: 12px;
+        }
+
+        #news_right {
+            float: right;
+            width: 55%;
+            margin-top: 5px;
+        }
+
+        #news_right img {
+            height: 65px;
+            width: 20%;
+        }
+
+        #news_right_text {
+            float: right;
+            width: 77%;
+            font-size: 15px;
+            text-align: justify;
+            margin-top: 2px;
+        }
+
+        #news_right_text a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #news_right_text a:hover {
+            color: blue;
+        }
+
+        #news_right hr {
+            border: 1px solid rgb(223, 223, 223);
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #news_right span a {
+            float: right;
+            text-decoration: none;
+            color: black;
+        }
+
+        #news_right span a:hover {
+            color: blue;
+        }
+
+        #left_bottom {
+            width: 69.5%;
+            float: left;
+            margin-top: 10px;
+        }
+
+        #left_bottom hr {
+            float: left;
+            width: 99.4%;
+            border: 2px solid tomato;
+            margin-top: 2px;
+        }
+
+        #lb_left {
+            height: auto;
+            width: 47%;
+            float: left;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        #lb_left a {
+            text-decoration: none;
+            color: green;
+        }
+
+        #lb_left img {
+            height: 190px;
+            width: 100%;
+            float: left;
+            margin-top: 6px;
+        }
+
+        #lb_right {
+            height: auto;
+            width: 47%;
+            float: right;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        #lb_right a {
+            text-decoration: none;
+            color: cornflowerblue;
+        }
+
+        #lb_right img {
+            height: 190px;
+            width: 100%;
+            float: right;
+            margin-top: 6px;
+        }
+
+        #right_inner {
+            width: 29.5%;
+            float: right;
+            height: auto;
+        }
+
+        #content {
+            margin-left: 33px;
+            text-align: justify;
+        }
+
+        #content a {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+
+        #content a:hover {
+            color: blue;
+        }
+
+        #right_mid {
+            width: 29.5%;
+            float: right;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #box {
+            height: 40px;
+            width: 95%;
+            line-height: 38px;
+            color: white;
+            margin-top: 5px;
+            float: right;
+        }
+
+        #box a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #right_bottom {
+            width: 29.5%;
+            float: right;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        #right_bottom a {
+            text-decoration: none;
+            font-size: 12px;
+            color: black;
+        }
+
+        #right_bottom a:hover {
+            color: blue;
+        }
+
+        #right_bottom ul {
+            margin-left: 33px;
+        }
+
+        #right_bottom #title {
+            height: 35px;
+            width: 95%;
+            float: left;
+            margin-top: 0px;
+            margin-left: 5%;
+        }
+
+        #right_bottom #title a {
+            line-height: 0.9cm;
+            color: white;
+            text-decoration: none;
+        }
+
+        #footer {
+            background-color: darkgrey;
+            height: 30px;
+            width: 100%;
+            float: left;
+            font-size: 10pt;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px 0px;
+        }
+        .mySlides {
+            display:none;          
+        }
+        #sliderPrev {
+        position: relative;
+        float: left;
+        left: 50px;
+        }
+        
+        #sliderNext {
+        position: relative;
+        float: right ;
+        right: 50px;   
+        }
+       #sliderNav {
+        position: relative;
+        top: -175px;
+        }
+        
+        #sliderNav:hover {
+        cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="tieude">
+            <div id="name"><a href="#">TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT HƯNG YÊN<br>
+                    <span>KHOA CÔNG NGHỆ THÔNG TIN</span></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#"><b>Trang chủ</b></a></li>
+                    <li><a href="#"><b>Giới thiệu</b></a></li>
+                    <li><a href="#"><b>Bộ môn - Trung tâm</b></a></li>
+                    <li><a href="#"><b>Đào tạo</b></a></li>
+                    <li><a href="#"><b>Nghiên cứu khoa học</b></a></li>
+                    <li><a href="#"><b>Tin tức</b></a></li>
+                    <li><a href="#"><b>Sự kiện</b></a></li>
+                    <li><a href="#"><b>Thông báo</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="slideshow">
+            <img class="mySlides" src="img/house2.jpg" style="width:100%">
+            <img class="mySlides" src="img/house3.jpg" style="width:100%">
+            <img class="mySlides" src="img/house4.jpg" style="width:100%">
+            <img class="mySlides" src="img/house5.jpg" style="width:100%">
+            <div id="sliderNav">
+            <button id="sliderPrev" onclick="plusDivs(-1)">&#10094;</button>
+            <button id="sliderNext" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            
+            
+        </div>
+    </section>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+    <section>
+        <div id="left_inner">
+            <div id="title" style="background-color: red;"><a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Tin tức & Sự
+                        kiện</b></a></div>
+            <hr>
+            <div id="news_left">
+                <a href="#"><img src="img/house2.jpg"><b>Khoa Công nghệ Thông tin tổ
+                        chức sinh nhật cho các thầy cô sinh trong tháng 2</b></a><br><br>
+                <p>Hôm nay ngày 20/02/2020, khoa Công nghệ Thông tin vui mừng tổ chức sinh nhật cho các thầy cô
+                    có ngày sinh trong tháng 2: thầy Phạm Minh Chuẩn (20/02) và thầy Chu Bá Thành (22/02).</p>
+            </div>
+            <div id="news_right">
+                <a href="#"><img src="img/house3.jpg"></a>
+                <div id="news_right_text"><a href="#"><b>Lễ bảo vệ Luận văn Thạc sĩ chuyên ngành Công
+                            nghệ Thông tin khóa 7.</b></a></div>
+                <hr>
+                <a href="#"><img src="img/house4.jpg"></a>
+                <div id="news_right_text"><a href="#"><b>Trường ĐH SPKT Hưng Yên vinh danh trong top 30
+                            trường Đại học Việt Nam có công bố quốc tế nhiều nhất.</b></a></div>
+                <hr>
+                <a href="#"><img src="img/house3.jpg"></a>
+                <div id="news_right_text"><a href="#"><b>Tổng công ty viễn thông Viettel về thăm và làm
+                            việc tại Khoa Công nghệ thông tin.</b></a></div>
+                <hr>
+                <a href="#"><img src="img/house4.jpg"></a>
+                <div id="news_right_text"><a href="#"><b>Khoa Công nghệ thông tin công bố 02 đề án mở
+                            ngành đào tạo trình độ Đại học.</b></a></div>
+                <hr>
+                <span><a href="#"><b>Xem thêm</b></a></span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="right_inner">
+            <div id="title" style="background-color: rgb(0, 140, 255); margin-bottom: 10px;"><a
+                    href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Thông
+                        báo</b></a></div>
+            <div id="content">
+                <ul>
+                    <li><a href="#">Quyết định công nhận tốt nghiệp ĐHLT (từ CĐN)</a></li><br>
+                    <li><a href="#">Quyết định phân chuyên ngành ĐHCQ khóa 2019 - 2023 (K17)</a></li><br>
+                    <li><a href="#">Quyết định sinh viên bảo lưu kết quả học tập TK14.3 Nguyễn Minh Quang</a></li>
+                    <br>
+                    <li><a href="#">Quyết định công nhận tốt nghiệp ĐHCQ học kỳ bổ sung 2019</a></li><br>
+                    <li><a href="#">Quyết định công nhận tốt nghiệp ĐHLT (từ CĐ) học kỳ bổ sung 2019</a></li><br>
+                    <li><a href="#">Quyết định sinh viên bảo lưu kết quả học tập TK16.8 Nguyễn Hữu Bắn</a></li><br>
+                    <li><a href="#">Quyết định chuyển ngành từ CNTT -> KT ô tô lớp 101184 Nguyễn Sỹ Hiếu</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="left_bottom">
+            <div id="title" style="background-color: tomato;"><a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Hội thi sinh
+                        viên</b></a></div>
+            <hr>
+            <div id="lb_left">
+                <a href="#"><b>VUI CÙNG IT</b><img src="img/house5.jpg"></a>
+            </div>
+            <div id="lb_right">
+                <a href="#"><b>OLYMPIC TIN HỌC</b><img src="img/house5.jpg"></a>
+            </div>
+            <div id="lb_left">
+                <a href="#"><b>VĂN NGHỆ THỂ THAO</b><img src="img/house4.jpg"></a>
+            </div>
+            <div id="lb_right">
+                <a href="#"><b>GHIÊN CỨU KHOA HỌC</b><img src="img/house3.jpg"></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="right_mid">
+            <div style="background-color: red;" id="box">
+                <a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Học viên cao học</b></a>
+            </div>
+            <div style="background-color: cornflowerblue;" id="box">
+                <a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Sinh viên</b></a>
+            </div>
+            <div style="background-color: tomato;" id="box">
+                <a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Văn bản</b></a>
+            </div>
+            <div style="background-color: green;" id="box">
+                <a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Hỏi đáp</b></a>
+            </div>
+            <div style="background-color: darkviolet;" id="box">
+                <a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Liên hệ</b></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="right_bottom">
+            <div id="title" style="background-color: rgb(0, 140, 255); margin-bottom: 10px;"><a
+                    href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;Liên kết</b></a></div>
+            <ul>
+                <li><a href="#">Bộ môn Công nghệ phần mềm</a></li><br>
+                <li><a href="#">Bộ môn Mạng máy tính & Truyền thông</a></li><br>
+                <li><a href="#">Bộ môn Kỹ thuật máy tính</a></li><br>
+                <li><a href="#">Trung tâm Hưng Yên Aptech</a></li><br>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div id="footer">
+            <p>Bản quyền thuộc về Khoa CNTT<br>Trường Đại học Sư Phạm Kỹ Thuật Hưng Yên</p>
+        </div>
+    </section>
+</body>
+
+</html>

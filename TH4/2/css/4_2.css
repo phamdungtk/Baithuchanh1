@@ -1,0 +1,48 @@
+*{
+    max-width: 960px;
+    margin: 0 auto;
+    height: 600px;
+}
+
+#frame {
+    width: 960px;
+    height: 600px;
+}
+
+#content {
+    width: 685px;
+    height: 100%;
+    float: left;
+}
+
+#news {
+    background-color: rgb(238, 238, 238);
+    width: 330px;
+    height: 300px;
+    float: left;
+    margin-left: 5px;
+}
+
+#relate {
+    width: 350px;
+    height: 60%;
+    float: left;
+}
+
+#right {
+    background-color: rgb(238, 238, 238);
+    width: 260px;
+    height: 100%;
+    float: left;
+    margin-left: 5px;
+}
+
+#imgsmall {
+    height: 27%;
+    width: 35%;
+    float: left;
+}
+
+#title {
+    text-decoration: none;
+}
